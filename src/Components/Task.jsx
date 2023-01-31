@@ -4,7 +4,7 @@ import {
   deleteTask,
   toggleCompletedTask,
   setCurrentTask,
-} from "./redux/actions/ToDoActions";
+} from "../redux/actions/ToDoActions";
 
 const Task = ({ todo }) => {
   const { id, description, isDone } = todo;
@@ -31,23 +31,15 @@ const Task = ({ todo }) => {
     >
       <div className={isDone ? "completed" : ""}>{description}</div>
       <div className="btn-group" role="group">
-        <i
-          id="completed"
-          className="fa fa-check text-secondary"
-          onClick={onClick}
-        ></i>
+        <i id="completed" className="bi bi-check-circle" onClick={onClick}></i>
         <i
           id="edit"
-          className="fas fa-pen text-dark"
+          className="bi bi-pencil"
           data-bs-toggle="modal"
           data-bs-target="#editTask"
           onClick={onClick}
         ></i>
-        <i
-          id="delete"
-          className="fa fa-trash text-danger"
-          onClick={onClick}
-        ></i>
+        <i id="delete" className="bi bi-trash3" onClick={onClick}></i>
       </div>
     </li>
   );

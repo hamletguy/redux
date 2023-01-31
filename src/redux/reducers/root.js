@@ -1,5 +1,5 @@
 import { combineReducers } from "redux";
-import taskReducer from "./redux/reducers/taskreducer";
+import taskReducer from "./taskreducer";
 
 export default combineReducers({
   tasks: taskReducer,

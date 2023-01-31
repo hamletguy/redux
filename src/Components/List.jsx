@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import Task from "./Components/Task";
+import Task from "./Task";
 
 const TaskList = () => {
   const { todos, filteredTodos } = useSelector((state) => state.tasks);

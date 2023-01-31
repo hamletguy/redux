@@ -6,7 +6,7 @@ import {
   SET_CURRENT_TASK,
   TOGGLE_COMPLETED_TASK,
   UPDATE_TASK,
-} from "./redux/actions/type";
+} from "../actions/type";
 
 const initialState = {
   todos: [],

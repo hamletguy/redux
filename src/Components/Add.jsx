@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { addTask, filterTask } from "./redux/actions/ToDoActions";
+import { addTask, filterTask } from "../redux/actions/ToDoActions";
 
 const AddTask = () => {
   const [text, setText] = useState("");

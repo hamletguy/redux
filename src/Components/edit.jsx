@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { updateTask } from "./redux/actions/ToDoActions";
+import { updateTask } from "../redux/actions/ToDoActions";
 
 const EditTask = () => {
   const dispatch = useDispatch();
